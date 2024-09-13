@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaBot</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .graph {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            background: url('graph.png') no-repeat center center;
+            background-size: contain;
+        }
+        .robot, .docking-station {
+            position: absolute;
+        }
+        .robot {
+            bottom: 10px;
+            left: 10px;
+        }
+        .docking-station {
+            top: 10px;
+            right: 10px;
+        }
+        .signal-range {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">PAYLOAD</a>
+        <a href="#">DIRECTIONS</a>
+        <a href="#">BATTERY</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <div class="graph">
+        <img src="robot.png" alt="Robot" class="robot">
+        <img src="docking-station.png" alt="Docking Station" class="docking-station">
+        <img src="signal-range.png" alt="Signal Range" class="signal-range">
+    </div>
+</body>
+</html>
